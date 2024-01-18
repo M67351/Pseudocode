@@ -1,13 +1,13 @@
 userChoice=integer(input(“Rental options: 1 – Economy, 2 – Saloon, 3 – Sports”))
-if userChoice > 0 then
+if userChoice > 0 and userChoice < 3 then
 	uConfirm=input(“Type 1 to confirm or 2 to cancel”)
 	if uConfirm==1 then
-    output(“Thank you for booking with us. You will be sent an email with details of your booking. If you still have not received an email, check your spam folder or contact us on our website. Have a nice day.”)
+    		output(“Thank you for booking with us. You will be sent an email with details of your booking. If you still have not received an email, check your spam folder or contact us on our website. Have a nice day.”)
 	else if uConfirm==2 then
 		output(“Booking cancelled.”)
 	else
-    output(“Invalid input. Please enter 1 to confirm or 2 to cancel.”)
+    		output(“Invalid input. Please enter 1 to confirm or 2 to cancel.”)
 	end if
 else
-    output(“Invalid input. Please enter 1 for an economy car, 2 for a saloon car or 3 for a sports car.”)
+	output(“Invalid input. Please enter 1 for an economy car, 2 for a saloon car or 3 for a sports car.”)
 end if
