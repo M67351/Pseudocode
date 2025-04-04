@@ -1,0 +1,24 @@
+counter = 1
+while counter<=100
+    userNo=(input("Word or number"))
+    if userNo=="word" Then
+        userWord=input("Enter answer")
+            if counter/3 =/= integer And userWord=="fizz"
+                output("Incorrect, answer is", counter)
+            ElseIf counter/5 =/= integer And userWord=="buzz"
+                output("Incorrect, answer is", counter)
+            Else
+                output("Correct")
+            Endif
+    ElseIf userNo == "number" Then
+        if counter/3 == integer And userWord =/= "fizz"
+            output("Incorrect, answer is fizz")
+        ElseIf counter/5 == integer And userWord =/= "buzz"
+            output("Incorrect, answer is buzz")
+        ElseIf counter/5 == integer And counter/3 == integer And userWord =/= "fizz buzz" or "fizzbuzz"
+            output("Incorrect, answer is fizz buzz")
+        Endif
+    Else
+        output("Please enter -word- or -number-")
+    Endif
+Endwhile
